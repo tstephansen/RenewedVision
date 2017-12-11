@@ -1,0 +1,32 @@
+﻿<ld:MaterialDesignWindow x:Class="RenewedVision.MainWindow"
+                         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                         xmlns:dragablz="http://dragablz.net/winfx/xaml/dragablz"
+                         xmlns:ld="http://schemas.landmarkdevs.com/wpf"
+                         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                         xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+                         xmlns:vw="clr-namespace:RenewedVision.Views"
+                         Title="RenewedVision - Twitter"
+                         Width="600"
+                         Height="450"
+                         FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+                         NavigationDrawerButtonVisibility="Collapsed"
+                         PalletButtonVisibility="Collapsed"
+                         RenderOptions.BitmapScalingMode="HighQuality"
+                         SettingsPanelVisibility="Collapsed"
+                         TextOptions.TextFormattingMode="Ideal"
+                         mc:Ignorable="d">
+    <Grid>
+        <dragablz:TabablzControl x:Name="MainTabControl"
+                                 Grid.Row="1"
+                                 Style="{DynamicResource MaterialDesignTabablzControlStyle}"
+                                 UseLayoutRounding="True">
+            <dragablz:TabablzControl.Items>
+                <TabItem Header="Tweet">
+                    <vw:MainView />
+                </TabItem>
+            </dragablz:TabablzControl.Items>
+        </dragablz:TabablzControl>
+    </Grid>
+</ld:MaterialDesignWindow>
