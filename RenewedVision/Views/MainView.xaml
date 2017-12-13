@@ -27,8 +27,8 @@
                         Margin="0,0,10,10"
                         HorizontalAlignment="Right"
                         Orientation="Horizontal">
-                <Button Command="{Binding ClearRichTextCommand}" Content="Clear Text" />
-                <Button Command="{Binding ShowMessageBoxCommand}" Content="Tweet" />
+                <Button Command="{Binding ClearRichTextCommand}" Content="Clear Text" Margin="0,0,10,0"/>
+                <Button Command="{Binding ShowMessageBoxCommand}" Content="Tweet" Background="{DynamicResource TweetButtonColor}" Margin="10,0,0,0" Foreground="#FFF"/>
             </StackPanel>
         </Grid>
     </md:Card>

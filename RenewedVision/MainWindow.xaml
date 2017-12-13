@@ -5,11 +5,11 @@
                          xmlns:dragablz="http://dragablz.net/winfx/xaml/dragablz"
                          xmlns:ld="http://schemas.landmarkdevs.com/wpf"
                          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-                         xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
                          xmlns:vw="clr-namespace:RenewedVision.Views"
                          Title="RenewedVision - Twitter"
-                         Width="600"
-                         Height="450"
+                         Background="#E0E0E0"
+                         Width="800"
+                         Height="650"
                          FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
                          NavigationDrawerButtonVisibility="Collapsed"
                          PalletButtonVisibility="Collapsed"
@@ -19,12 +19,11 @@
                          mc:Ignorable="d">
     <Grid>
         <dragablz:TabablzControl x:Name="MainTabControl"
-                                 Grid.Row="1"
                                  Style="{DynamicResource MaterialDesignTabablzControlStyle}"
                                  UseLayoutRounding="True">
             <dragablz:TabablzControl.Items>
                 <TabItem Header="Tweet">
-                    <vw:MainView />
+                    <vw:MainView Margin="20"/>
                 </TabItem>
             </dragablz:TabablzControl.Items>
         </dragablz:TabablzControl>

@@ -1,5 +1,4 @@
 ﻿using RenewedVision.Core;
-using System;
 
 namespace RenewedVision.ViewModels
 {
@@ -22,12 +21,7 @@ namespace RenewedVision.ViewModels
         public string Text
         {
             get => _text;
-            set
-            {
-                Console.WriteLine($"VM Text Changing from {Text}");
-                Set(ref _text, value);
-                Console.WriteLine($"VM Text Changed to: {Text}");
-            }
+            set => Set(ref _text, value);
         }
         private string _text;
     }

@@ -86,7 +86,6 @@
     </ApplicationDefinition>
     <Compile Include="Controls\TwitterTextBox.cs" />
     <Compile Include="Core\Observable.cs" />
-    <Compile Include="Models\CaratPositionModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Views\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
